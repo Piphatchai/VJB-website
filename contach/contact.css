@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Libre+Baskerville&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+/* nav */
+
+.top-header {
+    background-color: white;
+    height: 120px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    transition: top 0.4s ease-out;
+}
+
+.top-header.hide {
+    top: -200px;
+}
+.containervjb{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-vjb ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-vjb ul li{
+   padding: 20px;
+   letter-spacing: 0.5px;
+   font-size: 18px;
+   font-weight: bolder;
+}
+  
+.nav-vjb ul li a{
+    margin-top: 20px 20px;
+    display: block;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.nav-vjb ul li a:hover{
+    color: orange;
+    transition: 0.4s;
+}
+
+.bar{
+    display: none;
+    font-size: 25px;
+    color: black;
+}
+
+@media screen and (max-width:1300px){
+    .nav-vjb ul li {
+       padding: 0px 5px;
+     
+    }
+}
+
+@media screen and (max-width:1300px){
+    .bar{
+        display: block;
+        margin-right: 50px;
+    }
+.nav-vjb{
+    position: absolute;
+    background-color: white;
+    margin-top: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.nav-vjb ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.show{
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.85;
+}
+
+}
+
+.VJB{
+    margin: 20px;
+    padding-left: 50px;
+
+}
+.VJB img{
+    width: 120px;
+    border-radius: 20px;
+}
+/* end nav */
+/* header */
+header{
+    height: 500px;
+    display: flex;
+    background: url(/contach/con1\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+.containerweb{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 250px;
+    max-width: 100%;
+    margin-left: 60px;
+}
+.containerweb h1{
+    font-weight: bolder;
+    max-width: 100%;
+    padding-left: 40px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.containerweb h1:hover{
+    color: orange;
+      transform: translateY(-8px);
+}
+/* end header */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background:  white  ;
+}
+
+@media screen and (max-width:1300px){
+
+    section{
+        grid-template-columns: 100%;
+        height: 100%;
+    }
+}
+
+.grid-item1{
+    margin-top: 80px;
+    display: grid;
+    padding: 30px;
+    max-width: 100%;
+}
+.grid-item1 h1{
+    color: #0087FF;
+    margin-bottom: -45px;
+}
+
+.grid-item1 ul{
+list-style: none;
+margin-bottom: 50px;
+}
+.grid-item1 li{
+    margin: 30px;
+}
+.grid-item1 ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.fa-sharp{
+    padding-right: 20px;
+}
+.fa-solid{
+    padding-right: 20px;
+}
+
+.con{
+  max-width: 100%;
+  position: relative;
+
+}
+.con ul{
+    display: flex;
+}
+.con .fa-brands{
+    font-size: 30px;
+    margin-bottom: 20px;
+    position :absolute;
+    top: -40px;
+}
+
+.con li .fa-facebook{
+    transition: 0.3s;
+}
+.con li .fa-facebook:hover{
+    color: #006AC8;
+    transform: translateY(8px);
+}
+.con li .fa-instagram{
+    transition: 0.3s;
+}
+.con li .fa-instagram:hover{
+    color:#ff00b5;
+    transform: translateY(8px);
+}
+.con li .fa-twitter{
+    transition: 0.3s 
+  }
+.con li .fa-twitter:hover{
+      color: #33BEFF;
+      transform: translateY(8px);
+}
+.con li .fa-youtube{
+    transition: 0.3s 
+  }
+.con li .fa-youtube:hover{
+      color: red;
+      transform: translateY(8px);
+  }
+.con  li .fa-skype{
+    transition: 0.3s 
+  }
+.con li .fa-skype:hover{
+      color: #33CAFF;
+      transform: translateY(8px);
+  }
+.form-container{
+    margin-top: 80px;
+    display: grid;
+    padding: 30px;
+    max-width: 100%;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.box{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 35px;
+    margin: 15px;
+}
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.name i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.name input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.name input::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+
+.number{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.number i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.number input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee; 
+    border-radius: 40px;
+}
+.number input::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.email i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.email input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.email input::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+.message-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.message-box i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.message-box textarea{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.message-box textarea::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+
+.button{
+    width: 100%;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.button button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #43CD5A ;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;  
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:1300px){
+    .form-container{
+        margin-top: 0px;
+        padding: 0px;
+    } 
+
+    .box{
+        padding-right: 60px;
+    }
+    .message .danger{
+        margin-right: 30px;
+    }
+    .message .success{
+        margin-right: 30px;
+    }
+}
+
+/* question  */
+.container-question{
+    margin-top: 200px;
+    height: 70Vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 600px;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.element{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: black;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.element .question{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.question h3{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.question button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.question i{
+    color: black;
+    font-size: 20px;
+}
+
+.text-1 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #FF9709 
+}
+
+
+.element .answer{
+    padding: 10px 20px;
+    animation: animate .7s;
+}
+
+.hideText{
+    display: none;
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* end question  */
+
+
+/*  footer*/
+
+footer{
+    margin-top: 200px;
+    background: linear-gradient(to right ,#ffd2f1,#f7ffbe);
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:1300px){
+    footer{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        max-width: 100%;
+    }
+
+    .button{
+        margin-top: 20px;
+        margin-left: 70px;
+        width: 80%;
+    }
+
+    .grid-footer2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: -1px;
+}
+    }
+
+
+.container-footer-item{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    
+}
+
+.grid-footer1{
+    text-align: center;
+    font-weight: bold;
+    padding: 55px;
+    max-width: 100%;
+}
+.grid-footer1 img{
+    max-width: 100%;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 10px rgba(0,0,0,0.8);
+    max-width: 100%;
+}
+.grid-footer2{
+    text-align: start;
+    margin-left: 36px;
+    max-width: 100%;
+}
+
+.grid-footer2 ul{
+    list-style: none;
+    padding: unset;
+    max-width: 100%;
+    
+}
+.grid-footer2 ul li{
+padding: 10px;
+max-width: 100%;
+   
+}
+.grid-footer2 ul li a{
+    text-align: start;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    max-width: 100%;
+}
+.grid-footer2 ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(to right,#097916,#00d4ff);
+    bottom: -6px;
+    left: 1%;
+    border-radius: 25px;
+    transition: .4s;
+    opacity: 0;
+}
+.grid-footer2 ul li a:hover:after{
+    width: 100%;
+    opacity: 1;
+}
+
+.grid-footer3 h3{
+    margin: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+    max-width: 100%;
+}
+.grid-footer3 ul{
+    display:flex;
+    list-style: none;
+    max-width: 100%;
+}
+
+.grid-footer3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    width: 54px;
+    margin: 8px;
+    font-size: 35px;
+    max-width: 100%;    
+}
+li .fa-facebook{
+  position: relative;
+  transition: 0.3s;
+  max-width: 100%; 
+}
+li .fa-facebook:hover{
+    color: #006AC8;
+    transform: translateY(8px);
+}
+li .fa-instagram{
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%; 
+  }
+li .fa-instagram:hover{
+      color:#ff00b5;
+      transform: translateY(8px);
+  }
+  li .fa-twitter{
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%; 
+  }
+li .fa-twitter:hover{
+      color: #33BEFF;
+      transform: translateY(8px);
+  } 
+  li .fa-youtube{
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
+  } 
+li .fa-youtube:hover{
+      color: red;
+      transform: translateY(8px);
+  } 
+  li .fa-skype{
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
+  }
+li .fa-skype:hover{
+      color: #33CAFF;
+      transform: translateY(8px);
+  } 
+  /* end footer */
